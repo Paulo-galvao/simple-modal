@@ -1,0 +1,114 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main 
+{
+    background: url(main-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+_____conteúdo visível_____
+*/
+
+.open-modal
+{
+    height: 220px;
+    width: 400px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #343434;
+
+}
+
+.open-modal h1
+{
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.open-modal #open-btn
+{
+    width: 130px;
+    margin: 50px  auto;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background: cornflowerblue;
+    outline: none;
+}
+
+.open-modal #open-btn:hover
+{
+    width: 150px;
+    background: darkcyan;
+    
+}
+
+/*
+_____conteúdo a ser exibido_____
+*/
+
+.hidden-modal 
+{
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    position: fixed;
+    /*  */
+    z-index: 1;
+}
+
+.total-modal
+{
+    visibility: visible;
+}
+
+.modal
+{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353935;
+    border: 5px solid #000;
+    border-radius: 10px;
+}
+
+.modal #close-btn
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #353935;
+    border: none;
+    outline: none;
+}
+
+#close-btn i
+{
+    font-size: 2.2em;
+    cursor: pointer;
+}
